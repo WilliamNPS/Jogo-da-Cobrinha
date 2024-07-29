@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <title>Jogo da cobrinha</title>
+</head>
+<body>
+    <div class="game-container">
+        <!-- Pontuação -->
+        <div class="score" >
+          <span class="ponto" >PONTOS:  <span class="score--value"style="display: inline;">00</span></span>
+        </div>
+
+        <!-- Canvas do Jogo -->
+        <div class="canvas-container" style="margin-bottom: 20%;">
+            <canvas width="600" height="600" style="margin-top: -5%; margin-bottom: 10%;"></canvas>
+        </div>
+
+        <!-- Tela de Menu / Game Over -->
+        <div class="menu-screen">
+            <span class="game-over">Game Over</span>
+            <span class="final-score">Final Score: <span>00</span></span>
+            <button class="btn-play">
+                <span class="material-symbols-outlined">play_circle</span>
+                jogar Novamente
+            </button>
+        </div>
+
+        <!-- Instruções para iniciar o jogo -->
+        <div class="start-instructions" >
+            <span class="material-symbols-outlined">keyboard_arrow_up</span>
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+            <span class="material-symbols-outlined">keyboard_arrow_left</span>
+            <span class="material-symbols-outlined">keyboard_arrow_right</span>
+            <span class="instruction-text">Pressione uma seta para começar</span>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
